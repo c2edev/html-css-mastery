@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2: Profile Card</title>
+
+    <!-- include stylesheets -->
+    <!-- include own library -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .profile_card {
+        /* border: 1px solid #666; */
+        box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.1);
+        width: 200px;
+      }
+      .profile_card .image_wrapper img {
+        height: 200px;
+        /* border-radius: 50%; */
+      }
+      .profile_card .description_wrapper {
+        text-align: center;
+      }
+
+      .profile_card .description_wrapper .contacts a img {
+        height: 12px;
+      }
+
+      .profile_card .description_wrapper .name {
+        font-size: 18px;
+        margin: 5px 0 0;
+        font-weight: 600;
+      }
+      .profile_card .description_wrapper .designation {
+        font-size: 14px;
+        color: #777;
+        margin: 0;
+      }
+      .profile_card .description_wrapper .contacts {
+        padding-bottom: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Profile Card</h1>
+
+    <!-- profile card -->
+    <div class="profile_card">
+      <div class="image_wrapper">
+        <img src="https://c2edev.sirv.com/img/members/janak.jpg" alt="User">
+      </div>
+
+      <div class="description_wrapper">
+        <h3 class="name">Budh Ram Gurung</h3>
+        <p class="designation">
+          Founder & CEO
+        </p>
+        <div class="contacts">
+          <a href="https://facebook.com/dhanusir" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.linkedin.com/in/jsdhami1020/" target="_blank">
+            <img src="images/linkedin.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
