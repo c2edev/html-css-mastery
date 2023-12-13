@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Flex Basics</title>
+
+    <!-- include stylesheets -->
+    <!-- include own library -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .parent {
+        border: 2px solid red;
+
+        width: 800px;
+        height: 300px;
+        padding: 20px;
+
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .child {
+        border: 2px solid #666;
+        padding: 1rem;
+        width: 300px;
+        /* margin-bottom: 1rem; */
+      }
+      /* .child:last-child {
+        margin-bottom: 0;
+      } */
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flex Basics</h1>
+
+      <div class="parent">
+        <div class="child">
+          <h2>Child 1</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magni aliquid, sunt repellat soluta perferendis!
+          </p>
+        </div>
+
+        <div class="child">
+          <h2>Child 2</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magni aliquid, sunt repellat soluta perferendis!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+/* sign in css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26,115,232);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 450px;
+}
+.main {
+  border: 1px solid #ccc;
+  padding: 3rem 2.5rem 4rem 2.5rem;
+  border-radius: 8px;
+}
+.main .header .header_logo_wrapper .header_logo {
+  height: 22px;
+}
+.main .header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.main .header .title {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 8px 0;
+}
+.main .header .sub-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #444;
+}
+
+.form_wrapper {
+  margin-top: 1.6rem;
+}
+.form_wrapper .email {
+  width: 100%;
+  padding: 16px 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid #ccc;
+}
+.form_wrapper .forgot_email {
+  font-weight: 600;
+}
+.form_wrapper .forgot_email_wrapper {
+  margin-top: 10px;
+}
+
+
+.form_info {
+  margin: 3rem 0 2.5rem;
+  font-size: 15px;
+  color: #666;
+}
+.form_info .learn_more {
+  font-weight: 600;
+}
+
+.form_action_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form_action_wrapper .next_btn {
+  background-color: rgb(26,115,232);
+  padding: 10px 24px 12px 24px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .language {
+  border: 0;
+  background-color: transparent;
+  width: 180px;
+  color: #666;
+}
+.footer .links_wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer .links_wrapper .link_item {
+  color: #666;
+  font-size: 13px;
+}
