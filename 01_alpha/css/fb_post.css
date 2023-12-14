@@ -1,0 +1,160 @@
+/* FB Post css */
+
+/* Using the custom BEM CSS Naming convention... */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.post_wrapper {
+  width: 620px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+.post_header {
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post_header__title {
+  /* width: 80%; */
+  margin: 0;
+  font-size: 28px;
+}
+.post_header__cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.post_header__cross__img {
+  height: 28px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color ease-in-out 0.2s;
+}
+.post_header__cross__img:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+
+/* profile wrapper */
+.profile_wrapper {
+  padding: 1rem 1.3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.profile__logo {
+  height: 45px;
+  border-radius: 50%;
+}
+.profile__info__name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.profile__info__friends__wrapper {
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  width: 85px;
+}
+.profile__info__friends__icon {
+  height: 14px;
+}
+.profile__info_friends {
+  background-color: transparent;
+  border: 0;
+}
+
+
+.post_body {
+  padding: 0 1.3rem;
+}
+.post_body__content__area {
+  border: 0;
+  width: 100%;
+  height: 130px;
+  width: 100%;
+  resize: none;
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+
+.post_body__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post_body__bottom__bg__icon {
+  height: 45px;
+}
+.post_body__bottom__bg__smile__icon {
+  height: 35px;
+}
+
+
+.action_wrapper__post_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+}
+
+.action_wrapper {
+  padding: 0 1.3rem;
+}
+
+.action_wrapper__post_btn_wrapper {
+  padding-bottom: 1.5rem;
+}
+.action_wrapper__add_post_btn {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.action_wrapper__post_actions_items {
+  display: flex;
+  gap: 1rem;
+}
+.action_wrapper__post_actions_items__item__img {
+  height: 30px;
+}
+
+.action_wrapper__post_btn_wrapper__btn_post {
+  background-color: #1877F2;
+  display: block;
+  margin-top: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px;
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  border: 0;
+}
+.action_wrapper__post_btn_wrapper__btn_post:hover {
+  background-color: #1670e6;
+}
