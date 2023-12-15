@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5: Netflix Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/netflix.css">
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-brand">
+            <a href="#">
+              <img src="https://dhanusir.github.io/30-days-html-css/netflix-homepage/images/netflix-logo.png" class="navbar-brand__logo" alt="Logo">
+            </a>
+          </div>
+
+          <div class="navbar_action_container">
+            <button class="navbar__sign_in_btn">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="banner__bg__img__container">
+        <div class="banner__bg__img__wrapper">
+          <img src="https://dhanusir.github.io/30-days-html-css/netflix-homepage/images/banner-bg.jpg"
+            class="banner__bg__img" alt="Netflix Banner">
+        </div>
+        <div class="banner__bg__overlay"></div>
+
+        <div class="banner__content">
+          <h1 class="banner__content__title">Unlimited movies TV shows, and more.</h1>
+          <h2 class="banner__content__subtitle">Watch anywhere. Cancel anytime.</h2>
+          <p class="banner__content__description">
+            Ready to watch? Enter your email to create or restart your membership.
+          </p>
+
+          <div class="banner__content__get_start_container">
+            <div class="banner__get_start_container__form">
+              <input type="text" class="banner__get_start_container__form__email">
+              <label for="email" class="banner__get_start_container__form__label">Email address</label>
+            </div>
+            <div class="banner__get_start_container__btn_wrapper">
+              <button class="banner__get_start_container__form_btn">
+                Get Started
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+
+    <!-- tv feature -->
+    <div class="tvfeature">
+      <div class="container">
+        <div class="tvfeature__wrapper">
+          <div class="tvfeature__details">
+            <h1 class="tvfeature__details__title">Enjoy on your TV.</h1>
+            <h2 class="tvfeature__details__subtitle">
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+            </h2>
+          </div>
+
+          <div class="tvfeature__img_container">
+            <img src="https://dhanusir.github.io/30-days-html-css/netflix-homepage/images/tvframe.png" alt="" class="tvfeature__frame">
+
+            <div class="tvfeature__video_container">
+              <video autoplay="" loop="" muted="" class="tvfeature__video">
+                <source src="https://dhanusir.github.io/30-days-html-css/netflix-homepage/videos/tv-bg-video.m4v" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offline feature -->
+  </body>
+</html>

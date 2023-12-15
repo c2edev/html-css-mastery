@@ -1,0 +1,180 @@
+/* netflix css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.navbar-brand {
+  width: 160px;
+}
+.navbar-brand__logo {
+  width: 100%;
+}
+
+.navbar__sign_in_btn {
+  background-color: #E50914;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  height: 32px;
+  margin-top: 5px;
+}
+
+/* banner */
+.banner {
+  border-bottom: 0.5rem solid rgb(35, 35, 35);
+}
+.banner__bg__img__container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.banner__bg__img__wrapper {
+  height: 100%;
+}
+.banner__bg__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.25) translateY(-10%);
+}
+.banner__bg__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.banner__content {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.banner__content__title {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.banner__content__subtitle {
+  margin: 1.5rem 0;
+}
+.banner__content__subtitle,
+ .banner__content__description {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.banner__content__get_start_container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+.banner__get_start_container__form {
+  background-color: rgba(0,0,0,0.4);
+  width: 450px;
+  height: 55px;
+  position: relative;
+}
+.banner__get_start_container__form__email {
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 1rem;
+}
+.banner__get_start_container__form__label {
+  position: absolute;
+  top: 25%;
+  left: 3.5%;
+  color: #bbb;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.banner__content__get_start_container .banner__get_start_container__form__email:focus + .banner__get_start_container__form__label {
+  position: absolute;
+  top: 0.2rem;
+  font-size: 13px;
+}
+
+.banner__get_start_container__form_btn {
+  background-color: #E50914;
+  border: 1px solid #E50914;
+  color: white;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+}
+
+
+/* tvfeature */
+.tvfeature {
+  background-color: #000;
+  padding: 4.5rem 0;
+  border-bottom: 0.5rem solid rgb(35, 35, 35);
+}
+
+.tvfeature__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tvfeature__details {
+  color: #fff;
+}
+.tvfeature__details__title {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.tvfeature__details__subtitle {
+  font-weight: 400;
+}
+.tvfeature__img_container {
+  position: relative;
+}
+.tvfeature__video_container {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
